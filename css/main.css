@@ -87,10 +87,10 @@ textarea {
    Author's custom styles
    ========================================================================== */
  
-   .content-wrapper {
-     width: 90%;
-     margin:50px 0;
-   }
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
    /* -------------------- Base Header - Footer Styles -------------------- */
 
 header,
@@ -99,19 +99,20 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
- }
+}
 
  /*Header styles */
 
 header {
   padding: 15px 0;
 }
+
 header .content-wrapper {
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 0;
 }
 
 .header-divider {
@@ -119,6 +120,7 @@ header .content-wrapper {
   height: 1px;
   margin: 10px 0 20px 0;
 }
+
 header nav {
   display: flex;
   justify-content: space-around;
@@ -136,7 +138,6 @@ header nav ul {
 /* Footer */
 
 footer {
-  display: flex;
   flex-direction: column;
 }
 
@@ -144,7 +145,7 @@ footer p {
   margin: 0;
 }
 
-footer .content-wrapper{
+footer .content-wrapper {
   width: 55%;
   margin: 50px 0;
 }
@@ -153,18 +154,12 @@ footer .contact {
   margin-bottom: 50px;
 }
 
-footer .social {
+footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-footer .social-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
- 
 footer .social-icons p {
   display: flex;
   justify-content: center;
@@ -172,6 +167,8 @@ footer .social-icons p {
 }
 
 footer .copyright {
+  display: flex;
+  justify-content: center;
   margin: 20px 0;
 }
 
@@ -233,6 +230,7 @@ aside {
 .reviews h2 {
   margin-bottom: 40px;
 }
+
 .reviews h3 {
   width: 45%;
   margin: 20px 0;
@@ -377,6 +375,8 @@ aside {
 @media only screen and (min-width: 768px) {
   /*Tablet styles here*/
 
+    /* General styles */
+
   .content-wrapper {
     max-width: 640px;
     margin: 100px 0;
@@ -385,7 +385,7 @@ aside {
     /*Header*/
 
   header {
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 33px 0;
   }
 
@@ -433,7 +433,7 @@ aside {
   }
 
   .features .features-item-description {
-      width: 50%;
+      width: 60%;
   }
 
     /*Reviews*/
@@ -496,6 +496,9 @@ aside {
           FAQ Page
 ========================================================================== */
   
+  header {
+    padding: 15px 0;
+  }
   .faq .content-wrapper {
     justify-content: space-between;
   }
@@ -511,7 +514,57 @@ aside {
 
 @media only screen and (min-width: 1200px) {
   /*Desktop styles here*/
+ 
+.content-wrapper {
+  max-width: 960px;
 }
+
+/* Hero */
+.hero-area h1 {
+   width: 60%
+}
+
+/* Aside */
+aside .content-wrapper {
+   justify-content: space-around;
+}
+
+aside .content-wrapper .form-description,
+aside .content-wrapper .form {
+   width: 30%%
+}
+
+/* Features */
+.features h2 {
+   width: 90%;
+}
+
+.features article {
+   flex-basis: 33%
+}
+
+/* Reviews */ 
+.reviews article div {
+   width: 43%
+}
+
+/* ==========================================================================
+About Page
+========================================================================== */
+.mission h2,
+.contact-section .content-wrapper h2 {
+   width: 95%
+}
+
+/* ==========================================================================
+FAQ Page
+========================================================================== */
+.faq h2 {
+   width: 100%;
+}
+
+}
+
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
